@@ -1,0 +1,21 @@
+{
+  "extends": ["react-app"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
+    "@typescript-eslint/no-non-null-assertion": ["error"],
+    "@typescript-eslint/no-explicit-any": ["error"],
+    "curly": ["error", "all"],
+    "prettier/prettier": ["error"]
+  }
+}

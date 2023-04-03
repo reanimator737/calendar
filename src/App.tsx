@@ -1,25 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Calendar } from './entities/calendar';
+import { DateContextWrapper } from './components/context/DateContext';
+import { CalendarContextWrapper } from './components/context/CalendarContext';
+import { ModalWindowControlProvider } from './components/context/modalWindowController';
+import { LabelsContextWrapper } from './components/context/LabelsContext';
+import { ScreenShotRefProvider } from './components/context/ScreenShotRefContext';
+import { Loader } from './components/base/loader';
+import { EventsContextWrapper } from './components/context/EventsController';
+import { FiltersContextWrapper } from './components/context/FiltersContext';
+import { Template } from './components/template';
 
 function App() {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  const calendarController = useMemo(() => new Calendar(), []);
+  useEffect(() => {
+    calendarController.getData().then(() => setIsLoading(false));
+  });
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DateContextWrapper>
+      <LabelsContextWrapper>
+        <EventsContextWrapper>
+          <CalendarContextWrapper>
+            <ScreenShotRefProvider>
+              <ModalWindowControlProvider>
+                <FiltersContextWrapper>
+                  <Template />
+                </FiltersContextWrapper>
+              </ModalWindowControlProvider>
+            </ScreenShotRefProvider>
+          </CalendarContextWrapper>
+        </EventsContextWrapper>
+      </LabelsContextWrapper>
+    </DateContextWrapper>
   );
 }
 
