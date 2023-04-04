@@ -2,10 +2,10 @@ import React, { MouseEvent, useCallback, useMemo } from 'react';
 import { Container, DateInfo, DayOfWeek, EventsContainer, Holiday } from './style';
 import { Event } from '../event';
 import { Draggable, DroppableProvided } from 'react-beautiful-dnd';
-import { useEvents } from '../context/EventsController';
-import { IDay } from '../../interface/calendar';
+import { useEvents } from '../../context/EventsController';
+import { IDay } from '../../core/interface/calendar';
 import { getInfoFromDate, parseDateToNumbers } from '../../helpers';
-import { useModalWindowController } from '../context/modalWindowController';
+import { useModalWindowController } from '../../context/modalWindowController';
 import { SmallText } from '../base/text/style';
 
 export const Card: React.FC<IDay & { provided: DroppableProvided; className?: string }> = ({

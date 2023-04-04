@@ -1,9 +1,9 @@
 import React, { PropsWithChildren, useContext, useMemo, useRef, useState } from 'react';
-import { LabelCreate, LabelUpdate } from '../modals/labelCreateAndUpdate';
-import { EventCreate, EventUpdate } from '../modals/eventCreateAndUpdate';
-import { ConfirmModal } from '../modals/confirm';
-import { IEvent } from '../../interface/events';
-import { CommonModalOnClick } from '../../interface/extra';
+import { LabelCreate, LabelUpdate } from '../components/modals/labelCreateAndUpdate';
+import { EventCreate, EventUpdate } from '../components/modals/eventCreateAndUpdate';
+import { ConfirmModal } from '../components/modals/confirm';
+import { IEvent } from '../core/interface/events';
+import { CommonModalOnClick } from '../core/interface/extra';
 
 interface ContextProps {
   labelCreate: React.MutableRefObject<CommonModalOnClick | null>;

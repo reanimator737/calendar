@@ -5,10 +5,10 @@ import { ScreenButton } from './functionalButtons/screen';
 import { CopyButton } from './functionalButtons/copy';
 import { PasteButton } from './functionalButtons/paste';
 import { debounce } from '../../helpers/debounce';
-import { useDate } from '../context/DateContext';
+import { useDate } from '../../context/DateContext';
 import { containsOnlyDigits } from '../../helpers';
 
-export const DatePicker: React.FC = () => {
+export const Header: React.FC = () => {
   const { year, setYear } = useDate();
   const [inputValue, setInputValue] = useState<number>(year);
 

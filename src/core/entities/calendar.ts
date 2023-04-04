@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { isLeapYear, parseDateToNumbers } from '../helpers';
+import { isLeapYear, parseDateToNumbers } from '../../helpers';
 import { Holidays, ICalendar } from '../interface/calendar';
 
 interface ICalendarClass {

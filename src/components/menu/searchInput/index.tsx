@@ -1,7 +1,7 @@
 import React, { FormEvent, useMemo, useState } from 'react';
 import { Label, Search } from './style';
 import { debounce } from '../../../helpers/debounce';
-import { useFilters } from '../../context/FiltersContext';
+import { useFilters } from '../../../context/FiltersContext';
 
 export const TextFilter: React.FC = () => {
   const { textFilter, setTextFilter } = useFilters();

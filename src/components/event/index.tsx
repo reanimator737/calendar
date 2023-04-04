@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import { Container, Label, LabelRow } from './style';
 import { DraggableProvided } from 'react-beautiful-dnd';
-import { useModalWindowController } from '../context/modalWindowController';
-import { IEvent } from '../../interface/events';
-import { useFilters } from '../context/FiltersContext';
+import { useModalWindowController } from '../../context/modalWindowController';
+import { IEvent } from '../../core/interface/events';
+import { useFilters } from '../../context/FiltersContext';
 import { BaseText } from '../base/text/style';
 
 export const Event: React.FC<IEvent & { provided: DraggableProvided }> = ({ id, date, value, labels, provided }) => {

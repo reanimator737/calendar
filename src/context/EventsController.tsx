@@ -1,8 +1,8 @@
 import React, { PropsWithChildren, useCallback, useContext, useMemo, useState } from 'react';
-import { IEvent, IEventList } from '../../interface/events';
-import { DnDActionProps } from '../../interface/extra';
-import { EventsFab } from '../../entities/events';
-import { ILabel } from '../../interface/labels';
+import { IEvent, IEventList } from '../core/interface/events';
+import { DnDActionProps } from '../core/interface/extra';
+import { EventsFab } from '../core/entities/events';
+import { ILabel } from '../core/interface/labels';
 
 interface IEventsContext {
   events: IEventList;

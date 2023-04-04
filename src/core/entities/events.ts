@@ -1,5 +1,5 @@
 import deepClone from 'lodash.clonedeep';
-import { findAllArrays, parseDateToNumbers } from '../helpers';
+import { findAllArrays, parseDateToNumbers } from '../../helpers';
 import { IEvent, IEventList } from '../interface/events';
 import { DnDActionProps } from '../interface/extra';
 import { ILabel } from '../interface/labels';

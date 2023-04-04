@@ -2,10 +2,10 @@ import React, { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import { CommonModal } from '../base/commonModal';
 import { ButtonContainer, Container } from './style';
 import { HexColorPicker } from 'react-colorful';
-import { useEvents } from '../context/EventsController';
+import { useEvents } from '../../context/EventsController';
 import { getRandomColor } from '../../helpers';
-import { useLabels } from '../context/LabelsContext';
-import { CommonModalProps } from '../../interface/extra';
+import { useLabels } from '../../context/LabelsContext';
+import { CommonModalProps } from '../../core/interface/extra';
 import { Header } from '../base/text/style';
 import { Input } from '../base/inputs/style';
 import { Button, RejectButton } from '../base/buttons/style';
@@ -75,7 +75,6 @@ export const LabelCreate: React.FC<CommonModalProps> = ({ modalRef }) => {
 
 export const LabelUpdate: React.FC<CommonModalProps & { id: number }> = ({ modalRef, id }) => {
   const { labels, updateLabel } = useLabels();
-  //TODO
   const { updateLabelList } = useEvents();
 
   const [inputValue, setInputValue] = useState('');

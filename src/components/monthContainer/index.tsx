@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Card } from '../card';
 import { Container } from './style';
 import { DragDropContext, Droppable, DropResult } from 'react-beautiful-dnd';
-import { useEvents } from '../context/EventsController';
-import { useDate } from '../context/DateContext';
-import { useCalendar } from '../context/CalendarContext';
-import { useScreenShotRef } from '../context/ScreenShotRefContext';
+import { useEvents } from '../../context/EventsController';
+import { useDate } from '../../context/DateContext';
+import { useCalendar } from '../../context/CalendarContext';
+import { useScreenShotRef } from '../../context/ScreenShotRefContext';
 
 export const MonthContainer: React.FC = () => {
   const { eventDragAndDrop } = useEvents();

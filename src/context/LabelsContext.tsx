@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useCallback, useContext, useMemo, useState } from 'react';
-import { ILabel } from '../../interface/labels';
-import { LabelGeneration } from '../../entities/labels';
+import { ILabel } from '../core/interface/labels';
+import { LabelGeneration } from '../core/entities/labels';
 
 interface ILabelsContext {
   labels: ILabel[];

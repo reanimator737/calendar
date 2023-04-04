@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, useContext, useEffect, useMemo, useState } from 'react';
 import { useDate } from './DateContext';
-import { ICalendar, IDay } from '../../interface/calendar';
-import { Calendar } from '../../entities/calendar';
+import { ICalendar, IDay } from '../core/interface/calendar';
+import { Calendar } from '../core/entities/calendar';
 
 const CalendarContext = React.createContext<ICalendar>([]);
 

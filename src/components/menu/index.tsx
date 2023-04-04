@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, LabelContainer, MenuContainer } from './style';
-import { useLabels } from '../context/LabelsContext';
+import { useLabels } from '../../context/LabelsContext';
 import { LabelComponentWithControl } from '../base/label';
-import { useModalWindowController } from '../context/modalWindowController';
+import { useModalWindowController } from '../../context/modalWindowController';
 import { TextFilter } from './searchInput';
 
 export const Menu: React.FC = () => {

@@ -1,10 +1,10 @@
 import React, { useCallback } from 'react';
 import { CheckBox, Container, Icon, PureContainer, Square } from './style';
-import { ILabel } from '../../../interface/labels';
-import { useEvents } from '../../context/EventsController';
-import { useFilters } from '../../context/FiltersContext';
-import { useModalWindowController } from '../../context/modalWindowController';
-import { useLabels } from '../../context/LabelsContext';
+import { ILabel } from '../../../core/interface/labels';
+import { useEvents } from '../../../context/EventsController';
+import { useFilters } from '../../../context/FiltersContext';
+import { useModalWindowController } from '../../../context/modalWindowController';
+import { useLabels } from '../../../context/LabelsContext';
 
 export const PureLabelComponent: React.FC<Omit<ILabel, 'id'> & { checked: boolean; handleClick: () => void }> = ({
   description,

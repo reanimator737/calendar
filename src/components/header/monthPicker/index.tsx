@@ -1,9 +1,9 @@
 import React from 'react';
 import { ArrowContainer, Container } from './style';
-import { MONTH } from '../../../const';
+import { MONTH } from '../../../core/const';
 import { Select } from '../../base/select';
 import { ReactComponent as Arrow } from '../../../assets/rightArrow.svg';
-import { useDate } from '../../context/DateContext';
+import { useDate } from '../../../context/DateContext';
 
 export const MonthPicker: React.FC = () => {
   const { goBackForMonth, goForwardForMonth, setMonth, month } = useDate();

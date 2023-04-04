@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
-import { useEvents } from '../../context/EventsController';
-import { IEventList } from '../../../interface/events';
-import { ILabel } from '../../../interface/labels';
-import { useLabels } from '../../context/LabelsContext';
+import { useEvents } from '../../../context/EventsController';
+import { IEventList } from '../../../core/interface/events';
+import { ILabel } from '../../../core/interface/labels';
+import { useLabels } from '../../../context/LabelsContext';
 import { Button } from '../../base/buttons/style';
 
 export const PasteButton: React.FC = () => {

@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import html2canvas from 'html2canvas';
-import { useScreenShotRef } from '../../context/ScreenShotRefContext';
+import { useScreenShotRef } from '../../../context/ScreenShotRefContext';
 import { Button } from '../../base/buttons/style';
 
 export const ScreenButton: React.FC = () => {

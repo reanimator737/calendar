@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { Button } from '../../base/buttons/style';
-import { useEvents } from '../../context/EventsController';
-import { useLabels } from '../../context/LabelsContext';
+import { useEvents } from '../../../context/EventsController';
+import { useLabels } from '../../../context/LabelsContext';
 
 export const CopyButton: React.FC = () => {
   const { labels } = useLabels();

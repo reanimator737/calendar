@@ -4,12 +4,12 @@ import { ButtonContainer, Container, DeleteText, LabelContainer } from './style'
 import { BaseText, Header } from '../base/text/style';
 import { Input } from '../base/inputs/style';
 import { AcceptButton, Button, RejectButton } from '../base/buttons/style';
-import { useLabels } from '../context/LabelsContext';
+import { useLabels } from '../../context/LabelsContext';
 import { PureLabelComponent } from '../base/label';
-import { useEvents } from '../context/EventsController';
-import { IEvent } from '../../interface/events';
-import { ILabel } from '../../interface/labels';
-import { CommonModalProps } from '../../interface/extra';
+import { useEvents } from '../../context/EventsController';
+import { IEvent } from '../../core/interface/events';
+import { ILabel } from '../../core/interface/labels';
+import { CommonModalProps } from '../../core/interface/extra';
 
 export const EventCreate: React.FC<CommonModalProps & { eventDate: string }> = ({ modalRef, eventDate }) => {
   const { labels } = useLabels();

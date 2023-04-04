@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { BackDrop, ModalWrap, Root } from './styles';
 import classNames from 'classnames';
-import { CommonModalProps } from '../../../interface/extra';
+import { CommonModalProps } from '../../../core/interface/extra';
 
 const open: Keyframe[] | PropertyIndexedKeyframes = [
   { opacity: 0, transform: 'translate(0, -75vh)', pointerEvents: 'none' },

@@ -3,7 +3,7 @@ import { CommonModal } from '../base/commonModal';
 import { ButtonContainer, Container } from './style';
 import { SubHeader } from '../base/text/style';
 import { Button, RejectButton } from '../base/buttons/style';
-import { CommonModalProps } from '../../interface/extra';
+import { CommonModalProps } from '../../core/interface/extra';
 
 export const ConfirmModal: React.FC<CommonModalProps & { handleClick: () => void }> = ({ modalRef, handleClick }) => {
   return (

@@ -1,13 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Calendar } from './entities/calendar';
-import { DateContextWrapper } from './components/context/DateContext';
-import { CalendarContextWrapper } from './components/context/CalendarContext';
-import { ModalWindowControlProvider } from './components/context/modalWindowController';
-import { LabelsContextWrapper } from './components/context/LabelsContext';
-import { ScreenShotRefProvider } from './components/context/ScreenShotRefContext';
+import { Calendar } from './core/entities/calendar';
+import { DateContextWrapper } from './context/DateContext';
+import { CalendarContextWrapper } from './context/CalendarContext';
+import { ModalWindowControlProvider } from './context/modalWindowController';
+import { LabelsContextWrapper } from './context/LabelsContext';
+import { ScreenShotRefProvider } from './context/ScreenShotRefContext';
 import { Loader } from './components/base/loader';
-import { EventsContextWrapper } from './components/context/EventsController';
-import { FiltersContextWrapper } from './components/context/FiltersContext';
+import { EventsContextWrapper } from './context/EventsController';
+import { FiltersContextWrapper } from './context/FiltersContext';
 import { Template } from './components/template';
 
 function App() {
